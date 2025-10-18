@@ -1,0 +1,1 @@
+Console qwen client. fill .env file and run gen_auth.py file. next run main.py and feel free to chat.

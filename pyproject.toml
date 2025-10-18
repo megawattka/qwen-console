@@ -1,0 +1,59 @@
+[project]
+name = "qwen"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "h2>=4.3.0",
+    "httpx>=0.28.1",
+    "pydantic>=2.12.3",
+]
+
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    "INP001",  # __init__.py in public namespaces
+    "TD003",  # issue links for todos
+    "FIX002",  # TODOs
+    "TID252",  # fvck absolute imports
+    "N818",  # "Error" suffix in exception class
+    "S101",  # assertions
+    "S324",  # I want to use sha1 please
+    "D105",  # undocumented-magic-method
+    "D107",  # undocumented-public-init
+    "CPY001",  # Copyright notice at the top
+    "PLR0913",  # too many arguments in function def
+    "PLR0917",  # too many positional arguments in function def
+    "PLR0904",  # too many public methods
+    "EM101", "EM102", "TRY003",  # string literal in exception
+    "D104",  # undocumented public package
+]
+unfixable = [
+    "RUF100", # unused noqa
+    "T20",  # removes print statements
+    "F841", # removes unused variables
+]
+preview = true
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.pyright]
+exclude = ["kover/bson", "benchmarks"]
+typeCheckingMode = "basic"
