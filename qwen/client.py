@@ -150,7 +150,7 @@ class Qwen:
             return None
         return json.loads(line.replace("data: ", "").strip())
 
-    async def create_completion(
+    async def create_completion(  # noqa: PLR0913
         self,
         chat_id: str,
         message: str,
@@ -163,10 +163,10 @@ class Qwen:
     ) -> AsyncGenerator[xJsonT | str | None, None]:
         """Create a streaming chat completion and asynchronously yield parsed events.
 
-        This coroutine opens a streaming HTTP connection to the completions
-        endpoint and yields either parsed JSON chunks (xJsonT), string content
-        fragments, or None for empty lines. The generator finishes when the
-        stream signals the finished status.
+        This coroutine opens a streaming HTTP connection to the
+        completions endpoint and yields either parsed JSON chunks or
+        string content fragments. The generator finishes when the stream
+        signals the finished status.
 
         Parameters:
             chat_id: The chat identifier.
@@ -175,9 +175,10 @@ class Qwen:
             temporary_chat: Whether to use a temporary/local chat mode.
             model: Model name to use.
             parent_id: Optional parent message id.
+            thinking_enabled: Whether to enable thinking mode.
 
         Yields:
-            xJsonT | str | None: Parsed JSON chunks, text content, or None.
+            xJsonT | str: Parsed JSON chunks or text content.
         """  # noqa: E501
         url = "https://chat.qwen.ai/api/v2/chat/completions"
         params = QueryParams(chat_id=chat_id)

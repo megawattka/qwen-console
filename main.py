@@ -22,7 +22,10 @@ async def main() -> None:
     chat_id = await qwen.create_chat(temporary=True)
     parent_id = None
     while True:
-        message = input(">>> ")  # noqa: ASYNC250
+        try:
+            message = input(">>> ")  # noqa: ASYNC250
+        except EOFError:
+            break
         kwargs = {"message": message, "parent_id": parent_id}
         output = ""
         async for chunk in qwen.create_completion(chat_id, **kwargs):
@@ -36,4 +39,7 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        log.info("Exiting...")
