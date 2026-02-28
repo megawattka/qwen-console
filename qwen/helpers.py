@@ -25,11 +25,11 @@ def get_headers(
         "user-agent": UA,
         "source": "web",
         "timezone": get_timezone(),
-        "version": "0.0.230",
+        "version": "0.2.9",
         "x-request-id": str(uuid.uuid4()),
         "origin": "https://chat.qwen.ai",
         "referer": referer,
-        "bx-v": "2.5.31",
+        "bx-v": "2.5.36",
     }
     if auth is not None:
         headers["authorization"] = f"{token_type} {auth}"
