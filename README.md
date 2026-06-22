@@ -1,5 +1,4 @@
 # 🧠 Qwen Console
-
 A console-based chat client for Qwen3 AI** – lightweight, fast, and browser‑free
 ---
 
