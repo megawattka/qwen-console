@@ -30,22 +30,9 @@ Qwen Console is a command‑line tool that lets you chat with Qwen3 AI models di
 
 ---
 
-## 🚀 Installation
+## 🚀 Startup
 
-1. **Clone the repository**
-
-       git clone https://github.com/megawattka/qwen-console.git
-       cd qwen-console
-
-2. **Install the package** (using `pip` and `pyproject.toml`)
-
-       pip install .
-
-   Or install directly from the repository:
-
-       pip install git+https://github.com/megawattka/qwen-console.git
-
-3. **Set up environment variables** – copy the example environment file and fill in your credentials:
+1. **Set up environment variables** – copy the example environment file and fill in your credentials:
 
        cp .env.dist .env
 
