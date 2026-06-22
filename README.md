@@ -1,6 +1,6 @@
 # 🧠 Qwen Console
 
-**A console-based chat client for Qwen3 AI** – lightweight, fast, and browser‑free[reference:0]
+A console-based chat client for Qwen3 AI** – lightweight, fast, and browser‑free
 
 ![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![License](https://img.shields.io/github/license/megawattka/qwen-console)
