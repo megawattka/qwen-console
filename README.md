@@ -4,24 +4,24 @@ A console-based chat client for Qwen3 AI** – lightweight, fast, and browser‑
 
 ## 📖 About
 
-Qwen Console is a command‑line tool that lets you chat with Qwen3 AI models directly from your terminal. It handles authentication, session management, and streaming responses – giving you a simple and speedy way to interact with Qwen without opening a browser[reference:1][reference:2].
+Qwen Console is a command‑line tool that lets you chat with Qwen3 AI models directly from your terminal. It handles authentication, session management, and streaming responses – giving you a simple and speedy way to interact with Qwen without opening a browser.
 
 ---
 
 ## ✨ Features
 
-- 🔐 **Simple authentication** – Generate a token using your Qwen credentials[reference:3][reference:4]
-- 💬 **Interactive chat** – Start a conversation with a temporary chat session[reference:5][reference:6]
-- ⚡ **Streaming responses** – See the AI reply in real‑time, word by word[reference:7][reference:8]
-- 📦 **Minimal dependencies** – Built with `httpx` and `asyncio`[reference:9][reference:10]
-- 🧩 **Extensible** – The `qwen` module can be imported and used in other Python projects[reference:11][reference:12]
+- 🔐 **Simple authentication** – Generate a token using your Qwen credentials
+- 💬 **Interactive chat** – Start a conversation with a temporary chat session
+- ⚡ **Streaming responses** – See the AI reply in real‑time, word by word
+- 📦 **Minimal dependencies** – Built with `httpx` and `asyncio`
+- 🧩 **Extensible** – The `qwen` module can be imported and used in other Python projects
 
 ---
 
 ## 📋 Prerequisites
 
-- 🐍 Python 3.10 or higher[reference:13][reference:14]
-- 🌐 A valid Qwen AI account (email and password)[reference:15][reference:16]
+- 🐍 Python 3.10 or higher
+- 🌐 A valid Qwen AI account (email and password)
 
 ---
 
